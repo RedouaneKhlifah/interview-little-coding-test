@@ -41,9 +41,9 @@
         <h2>Running the Project</h2>
         <p>To run the project, follow these steps:</p>
         <ol>
-            <li>Install dependencies by running: <code>npm install</code></li>
-            <li>Start the JSON server to simulate a backend: <code>npx json-server --watch data/db.json --port 3001</code></li>
-            <li>Start the React application: <code>npm start</code></li>
+            <li>Install dependencies by running: <code>   npm install   </code></li>
+            <li>Start the JSON server to simulate a backend: <code>   npx json-server --watch data/db.json --port 3001   </code></li>
+            <li>Start the React application: <code>   npm start   </code></li>
         </ol>
 
         <h2>Dependencies</h2>
