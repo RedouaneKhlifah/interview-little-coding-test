@@ -1,9 +1,9 @@
 import Axios from './AxiosConfig';
-import { v4 as uuidv4 } from 'uuid'; // Import uuidv4 function to generate UUIDs
+import { v4 as uuidv4 } from 'uuid'; 
 
 export const AddTask = async (text: string) => {
     try {
-        const taskId = uuidv4(); // Generate a unique UUID for the task
+        const taskId = uuidv4(); 
         const res = await Axios.post('tasks', { id: taskId, task: text, state: 'to-do' });
         console.log('Task added successfully:', res.data);
     } catch (error) {
