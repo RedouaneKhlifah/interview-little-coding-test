@@ -1,6 +1,6 @@
 import React from 'react';
 import Icons from '../constant/Icon';
-import { deleteTask, updateTaskToDone } from '../services/api/taskApi'; // Import the deleteTask and updateTaskToDone functions
+import { deleteTask, updateTaskToDone } from '../services/api/taskApi'; 
 
 interface TaskProps {
     task: {
@@ -15,7 +15,6 @@ const Task: React.FC<TaskProps> = ({ task }) => {
     const handleTaskUpdate = async () => {
         try {
             await updateTaskToDone(task.id);
-            console.log('Task updated to done successfully');
         } catch (error) {
             console.error('Error updating task:', error);
         }
@@ -44,13 +43,13 @@ const Task: React.FC<TaskProps> = ({ task }) => {
                             className='ps-1 w-7 h-7 rounded-md cursor-pointer'
                             src={Icons.CheckedIcon}
                             alt='CheckedIcon'
-                            onClick={handleTaskUpdate} // Call handleTaskUpdate on click
+                            onClick={handleTaskUpdate}
                         />
                         <img
                             className='p-1 w-7 h-7 rounded-md cursor-pointer'
                             src={Icons.TrashdIcon}
                             alt='TrashdIcon'
-                            onClick={handleDelete} // Call handleDelete on click
+                            onClick={handleDelete} 
                         />
                     </div>
                 )}
